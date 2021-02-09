@@ -2,6 +2,7 @@ import React from 'react';
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
+// import { createStore, applyMiddleware } from 'redux';
 
 class App extends React.Component {
   constructor(props) {
