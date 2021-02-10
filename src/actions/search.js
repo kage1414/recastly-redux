@@ -11,15 +11,12 @@ var handleVideoSearch = (q) => {
     max: 5
   };
 
-  // Call searchYouTube and save to variable
-  var videoResults = searchYouTube(obj);
-  // Call change videoList and changeVIdeo with resulting data
-  var dispatchActions = () => {
-    dispatch(changeVideoList(videoResults));
-    dispatch(changeVideo(videoResults[0]));
+  return function(dispatch) {
+    searchYouTube(obj, (data) => {
+      dispatch(changeVideoList(data));
+      dispatch(changeVideo(data[0]));
+    });
   };
-
-  return dispatchActions;
   //TODO:  Write an asynchronous action to handle a video search!
 };
 
