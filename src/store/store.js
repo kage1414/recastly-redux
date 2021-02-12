@@ -4,7 +4,7 @@ import rootReducer from './../reducers/main.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 
 let initialState = {
-  videos: exampleVideoData,
+  videoList: exampleVideoData,
   currentVideo: exampleVideoData[0],
   searchValue: ''
 };
