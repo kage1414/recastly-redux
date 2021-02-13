@@ -45,20 +45,14 @@ class App extends React.Component {
         <nav className="navbar">
           <div className="col-md-6 col-md-offset-3">
             <SearchContainer/>
-            {/* <Search getYouTubeVideos={this.getYouTubeVideos}/> */}
           </div>
         </nav>
         <div className="row">
           <div className="col-md-7">
             <VideoPlayerContainer/>
-            {/* <VideoPlayer video={this.state.currentVideo}/> */}
           </div>
           <div className="col-md-5">
             <VideoListContainer/>
-            {/* <VideoList
-              handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
-              videos={this.state.videos}
-            /> */}
           </div>
         </div>
       </div>
